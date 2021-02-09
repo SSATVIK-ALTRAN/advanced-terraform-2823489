@@ -9,6 +9,10 @@ variable "region" {
   default = "us-east-2"
 }
 
+variable "aws_session_token" {
+  description = "Temporary session token used to create instances"
+}
+
 variable "instance_count" {
   type = number
   default = 1
